@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<proxy>	
+	<log>
+		<proxy>
+			<log_path>./log.d</log_path>
+			<log_filename>proxy.log</log_filename>
+			<trace_ids>-1</trace_ids>
+			<trace_filter></trace_filter>
+			<trace_filter_exclude></trace_filter_exclude>
+			<print_tty>0</print_tty>
+			<short_prefix>1</short_prefix>
+			<max_file_size>20000000</max_file_size>			
+		</proxy>
+	</log>
+	<control>
+	    <!--  
+	      type = [write|readonly|synchro]
+	      audit = [yes|no]
+	    -->
+	    <!--
+	    <type>write</type>
+	    <protocol>mysql</protocol>
+        <url>http://172.16.1.120:8083/api</url>
+        <access_id>kelwqjoefijwld</access_id>
+        <access_key>dsaewqvewq</access_key>
+        <audit>yes</audit>
+        -->
+        <type>write</type>
+	    <protocol>redis</protocol>
+        <url>http://172.16.1.120:8099/api</url>
+        <access_id>kelwqjoefijwld</access_id>
+        <access_key>dsaewqvewq</access_key>
+        <audit>yes</audit>
+        <cache_file>./cache_file</cache_file>
+	</control>
+	<event>
+		<server>
+		  <ip>10.16.123.42</ip>
+		  <port>30061</port>
+		</server>
+		<syslog>
+		   <item>
+		     <ip>127.0.0.1</ip>
+		     <port>514</port>
+		   </item>
+           
+		   <item>
+		     <ip>172.16.1.57</ip>
+		     <port>6666</port>
+		   </item>
+		</syslog>
+	</event>
+</proxy>
