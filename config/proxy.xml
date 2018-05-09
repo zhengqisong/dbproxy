@@ -20,22 +20,22 @@
 	    <!--
 	    <type>write</type>
 	    <protocol>mysql</protocol>
-        <url>http://172.16.1.120:8083/api</url>
-        <access_id>kelwqjoefijwld</access_id>
-        <access_key>dsaewqvewq</access_key>
+        <url>http://192.168.1.21:8083/api</url>
+        <access_id>accessid</access_id>
+        <access_key>accesskey</access_key>
         <audit>yes</audit>
         -->
         <type>write</type>
 	    <protocol>redis</protocol>
-        <url>http://172.16.1.120:8099/api</url>
-        <access_id>kelwqjoefijwld</access_id>
-        <access_key>dsaewqvewq</access_key>
+        <url>http://192.168.1.32:8099/api</url>
+        <access_id>accessid</access_id>
+        <access_key>accesskey</access_key>
         <audit>yes</audit>
         <cache_file>./cache_file</cache_file>
 	</control>
 	<event>
 		<server>
-		  <ip>10.16.123.42</ip>
+		  <ip>192.168.1.23</ip>
 		  <port>30061</port>
 		</server>
 		<syslog>
@@ -45,7 +45,7 @@
 		   </item>
            
 		   <item>
-		     <ip>172.16.1.57</ip>
+		     <ip>192.168.1.32</ip>
 		     <port>6666</port>
 		   </item>
 		</syslog>
