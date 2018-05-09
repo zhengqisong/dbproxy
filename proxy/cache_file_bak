@@ -1,8 +1,8 @@
 {"result":"success","message":[
  {
-   "instance_name":"sdsds","account":"mytest","auth_password":"houht124",
-   "server_password":"houht123","audit":"no","service_model":"ha",
-   "nodes":[{"nodeid":"eeqwqe","host":"10.0.2.80","port":63801,"sentinel":"yes"}]
+   "instance_name":"sdsds","account":"mytest","auth_password":"password",
+   "server_password":"3233","audit":"no","service_model":"ha",
+   "nodes":[{"nodeid":"eeqwqe","host":"192.168.12.80","port":63801,"sentinel":"yes"}]
  }
 ]
 }
