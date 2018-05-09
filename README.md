@@ -8,7 +8,7 @@
 代理协议：支持mysql主从集群，redis主从复制集群  
 代理方案：采用数据库账号为全局唯一，通过数据库账号来定位目标数据库集群。  
 支持连接数：4核、8G的机器上，支持5000以上并发连接。  
-客户单要求：支持jdbc，navicat等常见客户端。   
+客户端：支持jdbc，navicat等常见客户端。   
 
 # 开发环境搭建
 工程采用automake实现编译，请参见https://www.ibm.com/developerworks/cn/linux/l-makefile/
