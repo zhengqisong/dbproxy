@@ -1,6 +1,16 @@
 # dbproxy
 本软件为数据库类的代理程序，支持mysql,redis等数据库的代理。
 
+# 部署图
+![image](https://github.com/zhengqisong/dbproxy/blob/master/design/dbproxy.png)
+  
+代理类型：读写代理、只读代理    
+代理协议：支持mysql主从集群，redis主从复制集群  
+代理方案：采用数据库账号为全局唯一，通过数据库账号来定位目标数据库集群。  
+支持连接数：4核、8G的机器上，支持5000以上并发连接。  
+客户单要求：支持jdbc，navicat等常见客户端。   
+
+# 开发环境搭建
 工程采用automake实现编译，请参见https://www.ibm.com/developerworks/cn/linux/l-makefile/
 
 # 文件结构说明
